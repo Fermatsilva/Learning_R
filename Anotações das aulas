@@ -1,1 +1,114 @@
+# ______________________________________________________________________________
+# 2 Exemplos de Objetos no R
+
+# 2.1 VETORES ---
+#   Estrutura de dados que permite armazenar um conjunto de valores do mesmo
+#   tipo (sequências de valores alfanuméricos). Em geral, representam uma
+#   variável (ex.: peso, idade, altura etc).
+
+# Todos os vetores em R têm um modo, classe e tamanho.
+
+# O modo, classe, determina o tipo de valores guardados no veotr.
+
+# Em R os vetores podem ser classificados como:
+# - character (conjunto de caracteres)
+# - logical (valores lógicos: TRUE, FALSE)
+# - numeric (números inteiros ou reais)
+# - complex (números complexos).
+
+# 2.1.1 Exemplo 1 ----
+# criando um objeto do tipo vetor denominado height, contendo 20 "observações".
+
+height <- c(165.32, 172.48, 158.67, 183.15, 190.24, 167.89, 175.06, 162.41, 178.52, 169.38, 181.77, 156.95, 192.63, 164.28, 173.84, 168.19, 185.46, 177.03, 159.72, 188.55)
+
+height # exibindo em tela o objeto height.
+
+class(height)   # retorna a classe do objeto height
+lenght(height)  # retorna o "tamanho" do objeto height
+str(height)     # retorna a estrutura do objeto height
+
+
+# 2.1.2 Exemplo 2 ----
+# criando o objeto do tipo vetor denominado sex, contendo 20 "observações"
+
+sex <- c("female", "female", "male",  "male", "female", "male", "female", "male", "female", "male", "male", "male", "male", "female", "male", "female", "female", "male", "male", "male")
+
+sex # exibindo em tela o vetor.
+
+class(sex)   # retorna a classe do objeto sex
+lenght(sex)  # retorna o "tamanho" do objeto sex
+str(sex)     # retorna a estrutura do objeto sex
+
+
+# 2.1.3 Exemplo 3 ----
+# criando em tela o tipo de vetor denominado age com 20 "observações"
+
+age <- c(22, 35, 41, 28, 56, 19, 33, 47, 25, 38, 44, 52, 31, 27, 60, 36, 49, 23, 40, 58)
+
+age # exibindo em tela o vetor.
+
+class(age)   # retorna a classe do objeto age
+lenght(age)  # retorna o "tamanho" do objeto age
+str(age)     # retorna a estrutura do objeto age
+
+
+#2.1.4 Exemplo 4 ----
+# criando em tela o vetor denominado race com 20 "observações".
+
+race <- c("White", "Black", "Asian", "White", "Hispanic", "Black", "White", "Asian", "Hispanic", "White", "Black", "Asian", "White", "Hispanic", "Black", "Asian", "White", "Hispanic", "Black", "White")
+
+race  # exibindo o vetor race
+
+class(race)   # retorna a classe do objeto race
+lenght(race)  # retorna o "tamanho" do objeto race
+str(race)     # retorna a estrutura do objeto race
+
+
+# OBSERVAÇÕES
+# Todos os elementos de um vetor são do mesmo tipo e ao tentar integrar elemento(s de tipos diferentes o R vai força-los a ser alternando-os (por coerção).
+
+# 2.1.5 Exemplo 5 ----
+# criando um objeto do tipo vetor denominado v1, pela combinação de dois vetores
+
+v1 <- c(c(1,2), c("A", "B", "C", "D"))
+
+v1 # exibindo o vetor race
+
+class(v1)   # retorna a classe do objeto v1
+lenght(v1)  # retorna o "tamanho" do objeto v1
+str(v1)     # retorna a estrutura do objeto v1
+
+
+# 2.2 MATRIZES ----
+
+# 2.2.1 Exemplo 1
+# inserindo os dados
+  
+  M1 <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, ncol = 3)
+
+v1 # exibindo o vetor race
+
+class(M1)   # retorna a classe do objeto M1
+lenght(M1)  # retorna o "tamanho" do objeto M1
+str(M1)     # retorna a estrutura do objeto M1
+
+# 2.2.2  Exemplo 2
+# criando matriz a partir dos vetors height e sex
+
+  M2 <- cbind(height, sex)
+  
+  M2 # exibindo em tela o objeto M2
+  
+class(M2)   # retorna a classe do objeto M2
+lenght(M2)  # retorna o "tamanho" do objeto M2
+str(M2)     # retorna a estrutura do objeto M2
+
+
+# 2.3 DATA FRAMES E TABLLES ----
+# estrutura composta por conjuntos de vetores podendo eles serem de classes diferentes
+
+  df < - data.frame
+
+
+
 
